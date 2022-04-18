@@ -137,6 +137,14 @@
 ;; Langauage-specific
 (load "setup-clojure.el")
 (load "setup-js.el")
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; correct $HOME
+;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+(setenv "HOME" (getenv "ORIG_HOME"))
+
+
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
