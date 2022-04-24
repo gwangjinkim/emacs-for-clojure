@@ -81,3 +81,6 @@
      (define-key clojure-mode-map (kbd "C-M-r") 'cider-refresh)
      (define-key clojure-mode-map (kbd "C-c u") 'cider-user-ns)
      (define-key cider-mode-map (kbd "C-c u") 'cider-user-ns)))
+
+;; When hitting RET autoindent `C-j`
+(electric-indent-mode +1) ;; C-j indentation at new line
